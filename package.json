@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
     "build": "npm run build -w backend && npm run build -w frontend",
-    "install:all": "npm install -w backend && npm install -w frontend"
+    "install:all": "npm install -w backend && npm install -w frontend",
+    "start": "npm run start -w backend"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
