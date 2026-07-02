@@ -1,0 +1,18 @@
+{
+  "name": "ai-emergency-assistant-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root management for AI Emergency Assistant Dashboard Mono-repo",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "install:all": "npm install -w backend && npm install -w frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
